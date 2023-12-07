@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GitHubLogin from "react-github-login";
+
+const onSuccess = (response) => console.log(response);
+const onFailure = (response) => console.error(response);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <GitHubLogin clientId="YOUR_CLIENT_ID"
+        redirectUri="YOUR_REDIRECT_URI"
+        onSuccess={onSuccess}
+        onFailure={onFailure}/> */}
+      <div>cd-collection</div>
     </div>
   );
 }
